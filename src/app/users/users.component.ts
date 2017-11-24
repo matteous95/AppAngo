@@ -1,12 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-users',
-  template: '<h2>Users</h2>'
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css']
 })
-
-export class Users{
-
-  
-
-}
+export class UsersComponent {
+  }
