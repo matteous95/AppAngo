@@ -1,5 +1,5 @@
 <table>
-  <caption> Users </caption>
+  <caption> {{title}} </caption>
   <tr>
     <th>Nome</th>
     <th>Cognome</th>
@@ -7,5 +7,12 @@
     <th>Email</th>
     <th>Telofono</th>
     <th>Provincia</th>
+    <th>action</th>
   </tr>
+
+    <tr app-user *ngFor="let utente of utenti" [utente-data]="utente"
+      (onDeleteUtente)="onDeleteUtente($event)">
+    </tr>
+
+
 </table>
